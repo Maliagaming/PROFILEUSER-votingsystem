@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="navigation">
+            <ul>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+        <div class="profile-card">
+            <h2>Welcome, User!</h2>
+            <form id="userProfileForm">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="schoolId"><i class="fas fa-id-card"></i> School ID:</label>
+                    <input type="text" id="schoolId" placeholder="Enter your school ID">
+                </div>
+                <div class="form-group">
+                    <label for="university"><i class="fas fa-university"></i> University:</label>
+                    <input type="text" id="university" placeholder="Enter your university">
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <h3>Password Management</h3>
+                <div class="form-group">
+                    <label for="currentPassword"><i class="fas fa-lock"></i> Current Password:</label>
+                    <input type="password" id="currentPassword" placeholder="Enter current password">
+                </div>
+                <div class="form-group">
+                    <label for="newPassword"><i class="fas fa-key"></i> New Password:</label>
+                    <input type="password" id="newPassword" placeholder="Enter new password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword"><i class="fas fa-key"></i> Confirm New Password:</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm new password">
+                </div>
+                <h3>Notification Preferences</h3>
+                <div class="form-group">
+                    <label><input type="checkbox" id="emailNotif"> Email Notifications</label>
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" id="smsNotif"> SMS Notifications</label>
+                </div>
+                <button type="button" id="saveProfile">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
